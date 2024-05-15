@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import WeeklySpecials from './components/WeeklySpecials';
-import ReservationForm from './components/ReservationForm';
 import About from './components/About';
+import ReservationPage from './components/ReservationPage';
+import OrderOnlinePage from './components/OrderOnlinePage';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -14,13 +14,10 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<>
-            <Hero />
-            <WeeklySpecials />
-            <ReservationForm />
-          </>} />
+          <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
-          {/* Add other routes as needed */}
+          <Route path="/reservations" element={<ReservationPage />} />
+          <Route path="/order-online" element={<OrderOnlinePage />} />
         </Routes>
         <Footer />
       </div>

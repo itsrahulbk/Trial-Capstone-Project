@@ -27,11 +27,11 @@ const Footer = () => {
           <p>Email: little@lemon.com</p>
         </div>
         <div className="footer-social">
-          <h4>Social Media Links</h4>
+          <h4>Follow Us</h4>
           <ul>
-            <li><a href="https://www.facebook.com">Facebook</a></li>
-            <li><a href="https://www.instagram.com">Instagram</a></li>
-            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.facebook.com" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com" aria-label="Instagram"><i className="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.twitter.com" aria-label="Twitter"><i className="fab fa-twitter"></i></a></li>
           </ul>
         </div>
       </div>

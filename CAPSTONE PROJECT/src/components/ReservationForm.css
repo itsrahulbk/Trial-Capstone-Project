@@ -3,10 +3,15 @@
   gap: 20px;
   max-width: 500px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.ReservationForm:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .ReservationForm label {
@@ -16,10 +21,18 @@
 
 .ReservationForm input,
 .ReservationForm select {
-  padding: 10px;
+  padding: 15px;
   font-size: 1em;
   border-radius: 5px;
   border: 1px solid #ddd;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ReservationForm input:focus,
+.ReservationForm select:focus {
+  border-color: #2a9d8f;
+  box-shadow: 0 0 8px rgba(42, 157, 143, 0.5);
+  outline: none;
 }
 
 .ReservationForm button {
@@ -31,6 +44,7 @@
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .ReservationForm button:disabled {
@@ -40,5 +54,25 @@
 
 .ReservationForm button:not(:disabled):hover {
   background-color: #264653;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .ReservationForm {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .ReservationForm label {
+    font-size: 1em;
+  }
+
+  .ReservationForm input,
+  .ReservationForm select {
+    font-size: 0.9em;
+  }
+
+  .ReservationForm button {
+    font-size: 1em;
+  }
 }
