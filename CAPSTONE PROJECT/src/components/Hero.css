@@ -1,15 +1,25 @@
 .hero {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 60px 20px;
   background: linear-gradient(to right, #f4a261, #e76f51);
   color: #fff;
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
 .hero-text {
-  max-width: 100%;
-  text-align: center;
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
 }
 
 .hero-text h1 {
@@ -44,14 +54,29 @@
   background-color: #264653;
 }
 
+.hero-image-container {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
 .hero-image {
-  margin-top: 20px;
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
   .hero-text h1 {
     font-size: 2.5em;
   }
@@ -66,5 +91,9 @@
 
   .reserve-button {
     font-size: 1em;
+  }
+
+  .hero-image-container {
+    max-width: 100%;
   }
 }
