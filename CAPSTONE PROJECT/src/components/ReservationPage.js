@@ -1,5 +1,5 @@
 import React from 'react';
-import ReservationForm from './ReservationForm';
+import BookingForm from './BookingForm';
 import './ReservationPage.css';
 
 const ReservationPage = () => {
@@ -7,7 +7,7 @@ const ReservationPage = () => {
     <main className="ReservationPage">
       <h2>Book a Table</h2>
       <div className="form-container">
-        <ReservationForm />
+        <BookingForm />
       </div>
     </main>
   );
