@@ -1,0 +1,21 @@
+footer {
+  padding: 20px;
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.footer-text {
+  margin-left: 10px;
+  color: var(--text-color);
+}
