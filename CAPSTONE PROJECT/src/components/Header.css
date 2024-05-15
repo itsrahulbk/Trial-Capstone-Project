@@ -3,26 +3,26 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: var(--background-color);
+  background-color: #f8f9fa;
 }
 
-.App-logo {
+.logo img {
   height: 50px;
   width: auto;
 }
 
-.nav-menu {
+nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-.nav-menu li a {
+nav ul li a {
   text-decoration: none;
-  color: var(--text-color);
+  color: #333;
   font-weight: bold;
 }
 
-.nav-menu li a:hover {
-  color: var(--hover-color);
+nav ul li a:hover {
+  color: #007bff;
 }
