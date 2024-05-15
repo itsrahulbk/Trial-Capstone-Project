@@ -1,0 +1,12 @@
+.about {
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.about h2 {
+  color: #007bff;
+}
+
+.about p {
+  margin: 10px
