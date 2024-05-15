@@ -4,19 +4,19 @@ import './Header.css';
 const Header = () => {
   return (
     <header className="App-header">
-      <picture>
-        <source srcSet="/images/logo-dark.png" media="(prefers-color-scheme: dark)" />
-        <img src="/images/logo-light.png" alt="logo" className="App-logo" />
-      </picture>
+      <div className="logo">
+        <img src="/images/logo1.png" alt="Little Lemon Logo" />
+      </div>
       <nav>
-        <ul className="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#booking">Book</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;
