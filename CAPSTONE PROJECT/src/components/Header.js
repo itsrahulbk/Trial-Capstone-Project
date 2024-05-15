@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <header className="App-header">
       <picture>
-        <source srcSet="%PUBLIC_URL%/images/logo-dark.png" media="(prefers-color-scheme: dark)" />
-        <img src="%PUBLIC_URL%/images/logo-light.png" alt="logo" className="App-logo" />
+        <source srcSet="/images/logo-dark.png" media="(prefers-color-scheme: dark)" />
+        <img src="/images/logo-light.png" alt="logo" className="App-logo" />
       </picture>
       <nav>
         <ul className="nav-menu">
