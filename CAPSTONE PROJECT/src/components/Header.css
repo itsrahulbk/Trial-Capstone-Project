@@ -1,9 +1,9 @@
-.App-header {
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  background-color: #f8f9fa;
+  background-color: var(--background-color);
 }
 
 .logo img {
@@ -19,10 +19,10 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   font-weight: bold;
 }
 
 nav ul li a:hover {
-  color: #007bff;
+  color: var(--hover-color);
 }
