@@ -5,9 +5,12 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-text">
-        <h2>30% Off This Weekend</h2>
-        <p>Enjoy a delightful dining experience at Little Lemon with an exclusive 30% discount this weekend. Indulge in our mouth-watering dishes, made with the freshest ingredients and crafted to perfection. Don't miss out on this limited-time offer!</p>
+        <h1>Little Lemon Restaurant</h1>
+        <h2>Chicago</h2>
+        <p>We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+        <button className="reserve-button">Reserve Table</button>
       </div>
+      <img src="../images/hero-image.jpg" alt="Delicious food" className="hero-image" />
     </section>
   );
 };
